@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de la Vie</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <!--<a href="pages/mon-projet.html">Mon Projet</a> -->
+            <a href="pages/presentation.html">La Présentation du Jeu</a>
+            <a href="pages/ficheprojet.html">Ma fiche projet</a>
+        </div>
+    </div>
+    <h1>Jeu de la Vie</h1>
+    <h2>Le Jeu</h2>
+    <label for="color">Choisis la couleur:</label>
+
+    <select name="color" id="color">
+        <option value="red">Rouge</option>
+        <option value="green">Vert</option>
+        <option value="blue">Bleu</option>
+        <option value="white">White</option>
+    </select>
+    <canvas id="gameCanvas" width="710" height="710"></canvas>
+
+    <div class="buttons">
+        <button id="startButton">Démarrer</button>
+        <button id="resetButton">Réinitialiser</button>
+    </div>
+
+    <script src="jeuxdelavie.js"></script>
+    <footer>
+        <link href="style.css" rel="stylesheet">
+        <small>© | by galaxyrageur | Tout droit reservé.</small>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+
+</html>

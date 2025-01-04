@@ -1,0 +1,245 @@
+/* Configuration générale */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    /* Police  */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #535353, #1d1d1d);
+    /* Fond sombre avec dégradé */
+    color: #e0e0e0;
+    /* Texte clair pour contraste */
+    overflow: auto;
+    /* scroll thumb and track */
+}
+
+/* Scrollbar styling */
+
+/* Personnalisation de la scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largeur de la scrollbar */
+    height: 12px;
+    /* Hauteur de la scrollbar pour les barres horizontales */
+}
+
+/* Personnalisation du fond de la scrollbar */
+::-webkit-scrollbar-track {
+    background: #1d1d1d;
+    /* Couleur de fond du rail de la scrollbar */
+}
+
+/* Personnalisation de la poignée (thumb) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    /* Couleur de la poignée */
+    border-radius: 10px;
+    /* Arrondi des bords de la poignée */
+}
+
+/* Personnalisation de la poignée au survol */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #ff6a00, #d44c00);
+    /* Couleur de la poignée quand la souris survole */
+}
+
+/* Personnalisation de la scrollbar horizontale */
+::-webkit-scrollbar-horizontal {
+    height: 12px;
+    /* Hauteur de la scrollbar horizontale */
+}
+
+/* Titre */
+h1 {
+    color: #00ffcc;
+    text-align: center;
+    border: none;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 15px #00ffcc;
+    margin-top: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+/* Animation de lueur */
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 15px #00ffcc, 0px 0px 30px #00ffcc;
+    }
+
+    100% {
+        text-shadow: 0px 0px 5px #00ffcc, 0px 0px 20px #00ffcc;
+    }
+}
+
+/* Canvas */
+canvas {
+    border: 2px solid #00ffcc;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0px 0px 20px #00ffcc;
+}
+
+/* Contrôles */
+.buttons button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1d1d1d, #333);
+    color: #00ffcc;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #00ffcc;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+    background: #333;
+    box-shadow: 0px 0px 25px #00ffcc;
+    transform: scale(1.1);
+}
+
+/* Boutons spécifiques */
+#startButton {
+    background: linear-gradient(135deg, #003300, #00ff00);
+    color: #fff;
+}
+
+#startButton:hover {
+    background: #00ff00;
+    box-shadow: 0px 0px 25px #00ff00;
+}
+
+#resetButton {
+    background: linear-gradient(135deg, #330000, #ff0000);
+    color: #fff;
+}
+
+#resetButton:hover {
+    background: #ff0000;
+    box-shadow: 0px 0px 25px #ff0000;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1d1d1d;
+    color: #808080;
+    font-size: 0.9rem;
+    box-shadow: 0px -1px 10px #00ffcc;
+    bottom: 0;
+    width: 98.9%;
+}
+
+footer small {
+    display: block;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation pour le texte du pied */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Menu principal */
+.menu-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #00ffcc;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px #00ffcc;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Menu déroulant */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #1a1a1a;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffcc;
+    z-index: 1000;
+}
+
+.menu a {
+    display: block;
+    color: #00ffcc;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #00ffcc;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    background-color: #00ffcc;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+/*Pour le presentation.hmtl*/
+/* En-tête */
+header {
+    text-align: center;
+    /* Le titre principal est centré */
+    padding: 20px;
+}
+
+header h1 {
+    color: #00ffcc;
+    /* Titre en couleur néon */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* Contenu principal */
+main {
+    max-width: 800px;
+    /* Largeur maximale du contenu */
+    margin: 0 auto;
+    /* Centrer horizontalement la page */
+    padding: 20px;
+    text-align: left;
+    /* Alignement du texte à gauche */
+}
+
+/* Titres de section */
+section h2 {
+    margin-top: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+/* Listes */
+ul {
+    padding-left: 20px;
+    /* Indentation des listes */
+    list-style-type: disc;
+    /* Puces classiques */
+}

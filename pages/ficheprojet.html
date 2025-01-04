@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de la Vie</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    footer {
+        position: absolute;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <!-- <a href="mon-projet.html">Mon Projet</a> -->
+            <a href="presentation.html">La Présentation du Jeu</a>
+            <a href="ficheprojet.html">Ma fiche projet</a>
+        </div>
+    </div>
+
+    <h1>Jeu de la Vie</h1>
+    <h2>Ma fiche projet</h2>
+
+    <!-- Section Fiche Projet -->
+    <main>
+        <section>
+            <h2>Quoi ?</h2>
+            <p>
+                Le jeu de la vie en Python
+            </p>
+        </section>
+        <section>
+            <h2>Pour qui ?</h2>
+            <p>
+                Pour des passionnés de jeux vidéo complexes, rétro et Turing-complets.
+            </p>
+        </section>
+        <section>
+            <h2>Pourquoi ?</h2>
+            <p>
+                Pour me perfectionner en Python, en portes logiques et découvrir de nouvelles choses.
+            </p>
+        </section>
+        <section>
+            <h2>Comment ?</h2>
+            <ul>
+                <li><strong>S1 (15/11) :</strong> Définition du projet</li>
+                <li><strong>S2 et S3 (22/11) :</strong> Réalisation du code</li>
+                <li><strong>S4 (06/12) :</strong> Design du projet</li>
+                <li><strong>S5 (13/12) :</strong> Diaporama du projet + relecture du code + debug</li>
+                <li><strong>S6 (20/12) :</strong> Présentation</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <link href="style.css" rel="stylesheet">
+        <small>© | by galaxyrageur | Tous droits réservés.</small>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+
+</html>

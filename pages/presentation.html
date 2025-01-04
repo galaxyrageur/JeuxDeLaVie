@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de la Vie</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    footer {
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <!-- <a href="mon-projet.html">Mon Projet</a> -->
+            <a href="presentation.html">La Présentation du Jeu</a>
+            */*<a href="ficheprojet.html">Ma fiche projet</a> */*
+        </div>
+    </div>
+    <header>
+        <h1>Le Jeu de la Vie</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                Le <strong>Jeu de la Vie</strong> est un automate cellulaire imaginé par le mathématicien britannique
+                <em>John Horton Conway</em> en 1970. Ce jeu n'est pas réellement un jeu au sens classique du terme,
+                car il ne nécessite aucune intervention directe de la part des joueurs après le démarrage.
+            </p>
+        </section>
+        <section>
+            <h2>Règles de base</h2>
+            <p>
+                Le Jeu de la Vie se déroule sur une grille bidimensionnelle où chaque cellule peut être vivante ou
+                morte.
+                À chaque itération, l'état des cellules est mis à jour selon les règles suivantes :
+            </p>
+            <ul>
+                <li>Une cellule vivante avec moins de 2 voisins vivants meurt (sous-population).</li>
+                <li>Une cellule vivante avec 2 ou 3 voisins vivants survit.</li>
+                <li>Une cellule vivante avec plus de 3 voisins vivants meurt (surpopulation).</li>
+                <li>Une cellule morte avec exactement 3 voisins vivants devient vivante (reproduction).</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Un univers fascinant</h2>
+            <p>
+                Malgré ses règles simples, le Jeu de la Vie peut produire des motifs incroyablement complexes.
+                Certains motifs restent stables, d'autres oscillent entre plusieurs configurations,
+                et certains se déplacent à travers la grille, comme les célèbres *glisseurs* (ou "gliders").
+            </p>
+        </section>
+        <section>
+            <h2>Applications et curiosités</h2>
+            <p>
+                Le Jeu de la Vie a captivé des scientifiques, des programmeurs et des artistes depuis sa création.
+                Il est utilisé comme outil pédagogique pour illustrer des concepts en mathématiques, en informatique
+                et même en biologie. Il a également inspiré de nombreuses œuvres d'art numérique.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <link href="style.css" rel="stylesheet">
+        <small>© | by galaxyrageur | Tout droit reservé.</small>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+
+</html>
